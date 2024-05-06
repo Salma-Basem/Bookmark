@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Righteous&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-6.5.1-web/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="CSS/main.css" />
+    
+  </head>
+  <body>
+  <header><h1 class="mt-5 mx-auto text-center position-relative mb-5">Bookmarker</h1></header>
+
+  <main >
+    <section id="window">
+
+    </section>
+
+    <section class="bookmark mx-auto mt-5 pt-2  pb-2 ">
+    <div class="container  position-relative "> 
+        <div class=" mt-5 mb-5  dots ">
+          <div class="mt-5  d-flex justify-content-center align-items-center">
+            <i class="fa-solid fa-bookmark me-2 fa-xl" style="color: #4EA55B;"></i>
+            <h2 class="gradient-text">Bookmark your fav<span class="">orite sites</span> </h2>
+            <i class="fa-solid fa-bookmark ms-2 fa-xl" style="color: #B3AC49;"></i>
+          </div>
+          <div class="d-flex justify-content-start flex-column  ">
+            <h4 class="fw-bold h6"> <i class="fa-solid fa-book-bookmark me-2 mb-2 mt-4 ms-2 fw-bolder "></i>Site Name </h4>
+           <div class=" d-flex justify-content-between position-relative">
+            <input type="text" class="form-control mb-3 orange  " oninput="validateBorderColor(this)" id="userSiteName" placeholder="Bookmark Name">
+            <i class="fa-solid fa-check d-none position-absolute  end-0 p-2" id="validIcon" oninput="validateBorderColor(this)" style="color:green"></i>
+            <i class="fa-solid fa-circle-exclamation d-none position-absolute  end-0 p-2" id="notValidIcon" oninput="validateBorderColor(this)" style="color:red"></i>
+
+            </div>
+        
+             <h4 class="fw-bold h6"> <i class="fa-solid fa-link me-2 mb-2 mt-4 ms-2 fw-bolder"></i>Website URL </h4>
+             <div class=" d-flex justify-content-between position-relative"> 
+             <input type="url" class="form-control mb-5 orange" oninput="valid(this)"  id="siteURL" placeholder="Website URL">
+             <i class="fa-solid fa-check d-none position-absolute  end-0 p-2" id="validIcon1" oninput="valid(this)" style="color:green"></i>
+            <i class="fa-solid fa-circle-exclamation d-none position-absolute  end-0 p-2" id="notValidIcon2" oninput="valid(this)" style="color:red"></i>
+            </div> 
+            <button class="btn-danger rounded-2 btn px-5 py-2 m-auto d-block"id='btn' onclick="submitInput();">Submit</button>
+            <button class="btn-danger rounded-2 btn px-5 py-2 m-auto d-none"  id= "submitBtn" onclick="update();">Submit</button>
+
+          </div>
+        </div>
+
+    </div>
+
+    <div class="container mt-5 p-2 bg-light w-75">
+      <div class="row  justify-content-around align-items-center border-bottom">
+        <div class="col ">
+         <div class="text-black text-center fw-bold">Index</div>
+        </div>
+        <div class="col">
+          <div class="text-black text-center fw-bold">Website Name</div>
+        </div>
+        <div class="col">
+          <div class="text-black text-center fw-bold">Visit</div>
+        </div>
+        <div class="col">
+          <div class="text-black text-center fw-bold">Delete</div>
+        </div>
+        <div class="col">
+          <div class="text-black text-center fw-bold">Update</div>
+        </div>
+        
+
+
+     </div>
+     
+     <div class="row p-2 pt-3  " id="rowData">
+
+
+       
+       </div> 
+     
+    </div>
+  </div>
+
+   </section>
+</main>
+    
+  <script src="bootstrap-5.3.2-dist/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+  <script src="JS/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,291 @@
+body{
+    background-color: #F7ECDE;
+    
+}
+
+h1{
+   
+    font-family: "Pacifico", cursive;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 50px;
+    color: rgb(53,46,40);
+    line-height: 60px;
+  
+  
+}
+h1::after{
+     content: '';
+     width: 265px;
+     border: #F3C15F 10px solid;
+     position: absolute;
+     bottom:5%;
+     /* left:42%; */
+     left:665px;
+     z-index: -9999;
+     transition: border 1s ;
+     
+}
+
+  h1:hover::after {
+    
+    border: #F3C15F 18px solid;
+  }
+
+  div.dots::before{
+
+    content: '';
+    border-top: 2px dotted rgb(13, 13, 14);
+    height: 3px;
+    width: 98%;
+    position: absolute;
+    bottom:100%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    
+  }
+h2{
+        font-family: "Righteous", sans-serif;
+        font-weight: 500;
+        font-style: normal;
+        line-height: 30px;
+        font-size: 25px;
+}
+.gradient-text {
+  background: linear-gradient(to right, green, #B3AC49);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.form-control {
+  border: 1px solid #ccc;
+}
+
+input.form-control.invalid {
+  border-color: red;
+  
+}
+input.form-control.valid{
+ 
+  border-color:green;
+}  
+ input.form-control.orange:focus{
+    box-shadow: 0 0 0 0.25rem #fec26055 !important;
+    border-color: #d99c39;
+} 
+input.form-control.invalid:focus{
+  box-shadow: 0 0 0 0.25rem #bd3d0a55 !important;
+}
+input.form-control.valid:focus{
+  box-shadow: 0 0 0 0.25rem #0c882155 !important;
+}
+
+
+div.dots::after{
+
+    content: '';
+    border-top: 2px dotted rgb(13, 13, 14);
+    height: 3px;
+    width: 98%;
+    position: absolute;
+    bottom:-15%;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    
+  }
+
+  .fa-stack.small {
+    font-size: 0.5em;
+  }
+
+  .window{
+    width: 450px;
+    height: 200px;
+  }
+
+  @media (max-width:1550px) 
+  {
+    h1::after{
+      content: '';
+      width: 265px;
+     left:607px;
+      bottom:5%;
+      /* left:42%; */
+
+      
+ }
+  }
+  @media (max-width:1400px) 
+  {
+    h1::after{
+      content: '';
+      width: 265px;
+     left:560px;
+      bottom:5%;
+      /* left:42%; */
+
+      
+ }
+  }
+  @media (max-width:1200px) 
+  {
+    h1::after{
+      content: '';
+      width: 265px;
+     left:377px;
+      bottom:5%;
+      /* left:42%; */
+
+      
+ }
+  }
+
+  @media (max-width:1199px) 
+  {
+    h1::after{
+      content: '';
+      width: 265px;
+     left:470px;
+      bottom:5%;
+      /* left:42%; */
+
+      
+ }
+  }
+
+  @media (max-width:1000px) 
+  {
+    h1::after{
+      content: '';
+      width: 265px;
+     left:300px;
+      bottom:5%;
+      /* left:42%; */
+
+      
+ }
+  }
+  @media (max-width:999px) 
+  {
+    h1::after{
+      content: '';
+      width: 265px;
+     left:370px;
+      bottom:5%;
+      /* left:42%; */
+
+      
+ }
+  }
+  @media (max-width:900px) 
+  {
+    h1::after{
+      content: '';
+      width: 265px;
+     left:330px;
+      bottom:5%;
+      /* left:42%; */
+
+      
+ }
+  }
+
+
+  @media (max-width:800px) 
+  {
+    h1::after{
+      content: '';
+      width: 265px;
+     left:270px;
+      bottom:5%;
+      /* left:42%; */
+
+      
+ }
+  }
+
+
+  
+  @media (max-width:750px) 
+  {
+    h1::after{
+      content: '';
+      width: 265px;
+     left:240px;
+      bottom:5%;
+      /* left:42%; */
+
+      
+ }
+  }
+
+  @media (max-width:700px) 
+  {
+    h1::after{
+      content: '';
+      width: 265px;
+     left:220px;
+      bottom:5%;
+      /* left:42%; */
+
+      
+ }
+  }
+
+
+  @media (max-width:650px) 
+  {
+    h1::after{
+      content: '';
+      width: 265px;
+     left:180px;
+      bottom:5%;
+      /* left:42%; */
+
+      
+ }
+  }
+
+
+  
+  @media (max-width:599px) 
+  {
+    h1::after{
+      content: '';
+      width: 265px;
+     left:180px;
+      bottom:5%;
+      /* left:42%; */
+
+      
+ }
+ div.dots::after{
+
+  width: 90%;
+}
+
+div.dots::before{
+  width: 90%;
+}
+  }
+
+  @media (max-width:500px) 
+  {
+    h1::after{
+      content: '';
+      width: 265px;
+     left:100px;
+      bottom:5%;
+        
+ }
+ div.dots::after{
+
+ 
+  width: 90%;
+}
+
+div.dots::before{
+
+ 
+  width: 90%;
+}
+  }
